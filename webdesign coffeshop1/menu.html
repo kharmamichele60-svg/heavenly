@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heavenly | Menu</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Poppins', sans-serif;
+            background: linear-gradient(to right, #3e2723, #6d4c41);
+            color:white;
+        }
+
+
+        .navbar{
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-brand{
+            font-size:1.5rem;
+            font-weight:bold;
+        }
+
+
+        .menu-section{
+            padding:60px 20px;
+        }
+
+        .menu-title{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .menu-title h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        .menu-title p{
+            color:#ddd;
+            font-size:1.1rem;
+        }
+
+
+        .menu-grid{
+            max-width:1200px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:25px;
+        }
+
+
+        .menu-card{
+            background: rgba(255,255,255,0.08);
+            border-radius:20px;
+            overflow:hidden;
+            backdrop-filter: blur(10px);
+            transition:0.4s;
+        }
+
+        .menu-card:hover{
+            transform:translateY(-10px);
+        }
+
+        .menu-card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .menu-content{
+            padding:20px;
+            text-align:center;
+        }
+
+        .menu-content h3{
+            margin-bottom:10px;
+        }
+
+        .menu-content p{
+            color:#eee;
+            margin-bottom:15px;
+        }
+
+        .price{
+            font-size:1.2rem;
+            font-weight:bold;
+            color:#ffcc80;
+        }
+
+
+        .order-btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            border-radius:25px;
+            background:#ffcc80;
+            color:#3e2723;
+            text-decoration:none;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .order-btn:hover{
+            transform:scale(1.05);
+            color:#3e2723;
+        }
+
+
+        .footer{
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            background: rgba(0,0,0,0.3);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                Heavenly Coffee
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section class="menu-section">
+
+        <div class="menu-title">
+
+            <h1>Our Coffee Menu</h1>
+
+            <p>
+                Fresh coffee and delicious drinks made with passion.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+
+            <div class="menu-card">
+
+                <img src="cuppo.jfif" alt="Espresso">
+
+                <div class="menu-content">
+
+                    <h3>Espresso</h3>
+
+                    <p>
+                        Rich and bold espresso made from premium coffee beans.
+                    </p>
+
+                    <div class="price">$3.00</div>
+
+                    <a href="#" class="order-btn">
+
+                        Order Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="espresso.cms" alt="Cappuccino">
+
+                <div class="menu-content">
+
+                    <h3>Cappuccino</h3>
+
+                    <p>
+                        Smooth espresso mixed with creamy milk foam.
+                    </p>
+
+                    <div class="price">$5.00</div>
+
+                    <a href="#" class="order-btn">
+
+                        Order Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="latte.jfif" alt="Latte">
+
+                <div class="menu-content">
+
+                    <h3>Latte</h3>
+
+                    <p>
+                        Creamy steamed milk blended with fresh espresso.
+                    </p>
+
+                    <div class="price">$6.00</div>
+
+                    <a href="#" class="order-btn">
+
+                        Order Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="mocha.jfif" alt="Mocha">
+
+                <div class="menu-content">
+
+                    <h3>Mocha</h3>
+
+                    <p>
+                        Chocolate flavored coffee topped with whipped cream.
+                    </p>
+
+                    <div class="price">$6.50</div>
+
+                    <a href="#" class="order-btn">
+
+                        Order Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="icedcoffee.jfif" alt="Iced Coffee">
+
+                <div class="menu-content">
+
+                    <h3>Iced Coffee</h3>
+
+                    <p>
+                        Refreshing cold coffee perfect for warm days.
+                    </p>
+
+                    <div class="price">$4.50</div>
+
+                    <a href="#" class="order-btn">
+
+                        Order Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="hot chocolate.jfif" alt="Hot Chocolate">
+
+                <div class="menu-content">
+
+                    <h3>Hot Chocolate</h3>
+
+                    <p>
+                        Warm creamy chocolate drink topped with foam.
+                    </p>
+
+                    <div class="price">$5.50</div>
+
+                    <a href="#" class="order-btn">
+
+                        Order Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <p>© 2026 Heavenly Coffee | All Rights Reserved</p>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

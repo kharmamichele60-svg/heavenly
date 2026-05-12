@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Coffee House</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #3e2723, #6d4c41);
+    color: white;
+}
+.navbar {
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ffcc80;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ddd;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+
+.highlight {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+
+.highlight p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="services.html">Services</a>
+    <a href="signup.html">Signup</a>
+    <a href="survey.html">Survey</a>
+</div>
+
+<div class="container">
+    <h1>Our Story</h1>
+    <p class="subtitle">Where passion meets the perfect cup ☕</p>
+
+    <div class="about">
+
+        <div class="card">
+            <img src="photoshop1.jpeg">
+            <div class="card-content">
+                <h2>Crafted Coffee</h2>
+                <p>We carefully select premium beans from around the world to bring you rich flavors and unforgettable aromas in every cup.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="photoshop5.jpeg">
+            <div class="card-content">
+                <h2>Our Mission</h2>
+                <p>Our goal is to create a cozy and welcoming space where people can connect, relax, and enjoy exceptional coffee.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="photoshop2.jpeg">
+            <div class="card-content">
+                <h2>Our Space</h2>
+                <p>Designed with comfort in mind, our coffee shop offers a warm atmosphere perfect for studying, meeting, or unwinding.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="photoshop3.jpeg">
+            <div class="card-content">
+                <h2>Experience</h2>
+                <p>From smooth espresso to creamy lattes, every drink is made with care to give you a memorable experience.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="highlight">
+        <p>"Coffee is more than a drink, it's a moment to pause, connect, and enjoy life."</p>
+    </div>
+
+</div>
+
+</body>
+</html>

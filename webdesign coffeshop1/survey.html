@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee House - Survey</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:linear-gradient(to right,#3e2723,#6d4c41);
+    color:white;
+}
+
+.navbar {
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ffcc80;
+}
+
+h1{
+    text-align:center;
+    margin-top:25px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+
+label{
+    font-weight:bold;
+}
+
+.radio-group, .checkbox-group{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#ffcc80;
+    color:#3e2723;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+.footer{
+    text-align:center;
+    padding:15px;
+    background:rgba(0,0,0,0.3);
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="services.html">Services</a>
+    <a href="signup.html">Signup</a>
+    <a href="survey.html">Survey</a>
+</div>
+
+<h1>User Survey</h1>
+
+<div class="container">
+
+<form>
+
+    <label>Your Name:</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>How often do you visit our coffee shop?</label>
+    <div class="radio-group">
+        <input type="radio" name="visit"> Daily<br>
+        <input type="radio" name="visit"> Weekly<br>
+        <input type="radio" name="visit"> Monthly<br>
+    </div>
+
+    <label>What do you usually order?</label>
+    <select>
+        <option>Coffee</option>
+        <option>Latte</option>
+        <option>Cappuccino</option>
+        <option>Tea</option>
+    </select>
+
+    <label>What do you like about our shop?</label>
+    <div class="checkbox-group">
+        <input type="checkbox"> Taste<br>
+        <input type="checkbox"> Atmosphere<br>
+        <input type="checkbox"> Service<br>
+    </div>
+
+    <label>Rate your experience (0-10):</label>
+    <input type="range" min="0" max="10">
+
+    <label>Any suggestions?</label>
+    <textarea placeholder="Write your feedback..."></textarea>
+
+    <button type="submit">Submit Survey</button>
+
+</form>
+
+</div>
+
+<div class="footer">
+    <p>© Coffee Shop 2026</p>
+</div>
+
+</body>
+</html>

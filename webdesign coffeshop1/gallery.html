@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heavenly | Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Poppins', sans-serif;
+            background: linear-gradient(to right, #3e2723, #6d4c41);
+            color:white;
+        }
+
+
+        .navbar{
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-brand{
+            font-size:1.5rem;
+            font-weight:bold;
+        }
+
+
+        .gallery-section{
+            padding:60px 20px;
+        }
+
+        .gallery-title{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .gallery-title h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        .gallery-title p{
+            color:#ddd;
+            font-size:1.1rem;
+        }
+
+        .gallery-grid{
+            max-width:1200px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .gallery-card{
+            background: rgba(255,255,255,0.08);
+            border-radius:20px;
+            overflow:hidden;
+            backdrop-filter: blur(10px);
+            transition:0.4s;
+        }
+
+        .gallery-card:hover{
+            transform:translateY(-10px);
+        }
+
+        .gallery-card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
+
+        .gallery-content{
+            padding:20px;
+            text-align:center;
+        }
+
+        .gallery-content h3{
+            margin-bottom:10px;
+        }
+
+        .gallery-content p{
+            color:#eee;
+            font-size:0.95rem;
+        }
+
+
+        .footer{
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            background: rgba(0,0,0,0.3);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                Heavenly Coffee
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    
+
+    <section class="gallery-section">
+
+        <div class="gallery-title">
+
+            <h1>Our Coffee Gallery</h1>
+
+            <p>
+                Explore our cozy atmosphere, delicious drinks, and memorable moments.
+            </p>
+
+        </div>
+
+        
+
+        <div class="gallery-grid">
+
+
+            <div class="gallery-card">
+
+                <img src="photoshop4.jpeg" alt="Coffee Cup">
+
+                <div class="gallery-content">
+
+                    <h3>Fresh Cappuccino</h3>
+
+                    <p>
+                        Smooth and creamy cappuccino prepared by our expert baristas.
+                    </p>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="gallery-card">
+
+                <img src="photoshop2.jpeg" alt="Latte Art">
+
+                <div class="gallery-content">
+
+                    <h3>Beautiful Latte Art</h3>
+
+                    <p>
+                        Every cup is crafted with creativity and passion.
+                    </p>
+
+                </div>
+
+            </div>
+
+        
+
+            <div class="gallery-card">
+
+                <img src="photoshop3.jpeg" alt="Espresso">
+
+                <div class="gallery-content">
+
+                    <h3>Premium Espresso</h3>
+
+                    <p>
+                        Rich espresso made using carefully selected coffee beans.
+                    </p>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="gallery-card">
+
+                <img src="photoshop5.jpeg" alt="Coffee Shop">
+
+                <div class="gallery-content">
+
+                    <h3>Cozy Atmosphere</h3>
+
+                    <p>
+                        Relax and enjoy a peaceful coffee shop experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="gallery-card">
+
+                <img src="photoshop1.jpeg" alt="Coffee Beans">
+
+                <div class="gallery-content">
+
+                    <h3>Fresh Coffee Beans</h3>
+
+                    <p>
+                        We use high quality beans to create unforgettable flavors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <p>© 2026 Heavenly Coffee | All Rights Reserved</p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

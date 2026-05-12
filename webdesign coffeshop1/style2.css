@@ -1,0 +1,35 @@
+
+
+:root {
+    --coffee-dark: #3c2f2f;
+    --coffee-cream: #f4f1ea;
+    --coffee-accent: #be9b7b;
+}
+
+body {
+    background-color: var(--coffee-cream);
+    color: var(--coffee-dark);
+}
+
+.navbar {
+    border-bottom: 3px solid var(--coffee-accent);
+}
+
+.btn-primary {
+    background-color: var(--coffee-dark) !important;
+    border-color: var(--coffee-accent) !important;
+}
+
+input, select, textarea {
+    border: 1px solid var(--coffee-accent);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.gallery-img {
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
